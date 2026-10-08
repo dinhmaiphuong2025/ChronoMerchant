@@ -1,0 +1,11 @@
+{
+  "Name": "[CP] Chrono Merchant",
+  "Author": "dinhmaiphuong2025",
+  "Version": "1.0.0",
+  "Description": "Thương nhân thời không du mục bán các thiết bị điều khiển Saiyan Pod và bảo vật quý hiếm.",
+  "UniqueID": "dinhmaiphuong2025.ChronoMerchant",
+  "MinimumApiVersion": "4.0.0",
+  "ContentPackFor": {
+    "UniqueID": "Pathoschild.ContentPatcher"
+  }
+}

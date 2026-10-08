@@ -1,0 +1,124 @@
+{
+  "Format": "2.4.0",
+  "Changes": [
+    {
+      "LogName": "Load Portraits",
+      "Action": "Load",
+      "Target": "Portraits/ChronoMerchant",
+      "FromFile": "assets/Portraits/ChronoMerchant.png"
+    },
+    {
+      "LogName": "Load Characters",
+      "Action": "Load",
+      "Target": "Characters/ChronoMerchant",
+      "FromFile": "assets/Characters/ChronoMerchant.png"
+    },
+    {
+      "LogName": "Register ChronoMerchant Character Data",
+      "Action": "EditData",
+      "Target": "Data/Characters",
+      "Entries": {
+        "ChronoMerchant": {
+          "DisplayName": "Lữ Khách Thời Không",
+          "BirthSeason": "Winter",
+          "BirthDay": 28,
+          "Gender": "Male",
+          "Age": "Adult",
+          "Manner": "Neutral",
+          "SocialAnxiety": "Neutral",
+          "Optimism": "Neutral",
+          "HomeRegion": "Town",
+          "CanSocialize": true,
+          "Home": [
+            {
+              "Id": "Default",
+              "Location": "Town",
+              "Tile": {
+                "X": 40,
+                "Y": 56
+              },
+              "Direction": "Down"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Register ChronoMerchant Dialogue",
+      "Action": "EditData",
+      "Target": "Characters/Dialogue/ChronoMerchant",
+      "Entries": {
+        "Introduction": "Chào ngươi. Ta là một lữ khách thu thập cổ vật giữa các dòng thời gian... Ngươi có muốn xem những thiết bị thời không ta mang tới không?$h",
+        "Mon": "Dòng thời gian hôm nay khá ổn định... Ngươi cần thiết bị dịch chuyển hay linh kiện nào không?$h",
+        "Tue": "Công nghệ buồng lái Saiyan là một trong những phát minh vĩ đại nhất ta từng thu thập được.$0",
+        "Wed": "Cánh tay cơ khí này sao? Một tàn tích từ cuộc chiến thời không ở kỷ nguyên tương lai...$3",
+        "Thu": "Đi qua các dòng thời gian đòi hỏi năng lượng rất lớn. Hãy sử dụng các thiết bị điều khiển cẩn trọng.$0",
+        "Fri": "Hôm nay ta tìm thấy vài linh kiện pin và tinh thể rất hiếm.$1",
+        "Sat": "Thung lũng này có một dòng chảy thời gian thật yên bình, khác hẳn những nơi ta từng qua.$0",
+        "Sun": "Ngươi đang tìm kiếm chuyến hành trình mới phải không?$1"
+      }
+    },
+    {
+      "LogName": "Register ChronoShop Data",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "Entries": {
+        "ChronoShop": {
+          "Owners": [
+            {
+              "Name": "ChronoMerchant",
+              "Dialogues": [
+                {
+                  "Id": "Welcome",
+                  "Dialogue": "Chào lữ khách. Ta là người thu thập các bảo vật thời không trôi dạt giữa các chiều không gian. Ngươi cần tìm thứ gì?"
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {
+              "Id": "RemoteBase",
+              "ItemId": "(O)dinhmaiphuong2025.SaiyanRemote.Base",
+              "Price": 5000
+            },
+            {
+              "Id": "RemotePlus",
+              "ItemId": "(O)dinhmaiphuong2025.SaiyanRemote.Plus",
+              "Price": 25000
+            },
+            {
+              "Id": "RemotePro",
+              "ItemId": "(O)dinhmaiphuong2025.SaiyanRemote.Pro",
+              "Price": 75000
+            },
+            {
+              "Id": "RemoteProMax",
+              "ItemId": "(O)dinhmaiphuong2025.SaiyanRemote.ProMax",
+              "Price": 200000
+            },
+            {
+              "Id": "WarpTotemFarm",
+              "ItemId": "(O)688",
+              "Price": 1000
+            },
+            {
+              "Id": "WarpTotemDesert",
+              "ItemId": "(O)261",
+              "Price": 2500
+            },
+            {
+              "Id": "BatteryPack",
+              "ItemId": "(O)787",
+              "Price": 3000
+            },
+            {
+              "Id": "IridiumBar",
+              "ItemId": "(O)337",
+              "Price": 10000
+            }
+          ]
+        }
+      }
+    }
+  ]
+}
