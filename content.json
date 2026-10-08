@@ -54,8 +54,8 @@
           "SocialAnxiety": "Neutral",
           "Optimism": "Neutral",
           "HomeRegion": "Forest",
-          "CanSocialize": true,
-          "CanGreetNearbyCharacters": true,
+          "CanSocialize": false,
+          "CanGreetNearbyCharacters": false,
           "Home": [
             {
               "Id": "Default",
