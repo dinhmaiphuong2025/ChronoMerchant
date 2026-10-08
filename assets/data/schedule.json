@@ -1,7 +1,7 @@
 {
-  "rain": "600 Forest 81 23 2",
-  "spring": "600 Forest 81 23 2",
-  "summer": "600 Forest 81 23 2",
-  "fall": "600 Forest 81 23 2",
-  "winter": "600 Forest 81 23 2"
+  "rain": "600 Forest 81 23 ChronoMerchant_idle",
+  "spring": "600 Forest 81 23 ChronoMerchant_idle",
+  "summer": "600 Forest 81 23 ChronoMerchant_idle",
+  "fall": "600 Forest 81 23 ChronoMerchant_idle",
+  "winter": "600 Forest 81 23 ChronoMerchant_idle"
 }
