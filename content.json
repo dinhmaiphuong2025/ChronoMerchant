@@ -34,8 +34,8 @@
               "Id": "Default",
               "Location": "Town",
               "Tile": {
-                "X": 40,
-                "Y": 56
+                "X": 42,
+                "Y": 61
               },
               "Direction": "Down"
             }
