@@ -14,6 +14,24 @@
       "FromFile": "assets/Characters/ChronoMerchant.png"
     },
     {
+      "LogName": "Load ChronoMerchant Dialogue Base",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/ChronoMerchant",
+      "FromFile": "assets/data/dialogue.json"
+    },
+    {
+      "LogName": "Load ChronoMerchant Dialogue Vietnamese",
+      "Action": "Load",
+      "Target": "Characters/Dialogue/ChronoMerchant.vi",
+      "FromFile": "assets/data/dialogue.json"
+    },
+    {
+      "LogName": "Load ChronoMerchant Schedule",
+      "Action": "Load",
+      "Target": "Characters/schedules/ChronoMerchant",
+      "FromFile": "assets/data/schedule.json"
+    },
+    {
       "LogName": "Register ChronoMerchant Character Data",
       "Action": "EditData",
       "Target": "Data/Characters",
@@ -27,35 +45,21 @@
           "Manner": "Neutral",
           "SocialAnxiety": "Neutral",
           "Optimism": "Neutral",
-          "HomeRegion": "Town",
+          "HomeRegion": "Forest",
           "CanSocialize": true,
+          "CanGreetNearbyCharacters": true,
           "Home": [
             {
               "Id": "Default",
-              "Location": "Town",
+              "Location": "Forest",
               "Tile": {
-                "X": 42,
-                "Y": 61
+                "X": 81,
+                "Y": 23
               },
               "Direction": "Down"
             }
           ]
         }
-      }
-    },
-    {
-      "LogName": "Register ChronoMerchant Dialogue",
-      "Action": "EditData",
-      "Target": "Characters/Dialogue/ChronoMerchant",
-      "Entries": {
-        "Introduction": "Chào ngươi. Ta là một lữ khách thu thập cổ vật giữa các dòng thời gian... Ngươi có muốn xem những thiết bị thời không ta mang tới không?$h",
-        "Mon": "Dòng thời gian hôm nay khá ổn định... Ngươi cần thiết bị dịch chuyển hay linh kiện nào không?$h",
-        "Tue": "Công nghệ buồng lái Saiyan là một trong những phát minh vĩ đại nhất ta từng thu thập được.$0",
-        "Wed": "Cánh tay cơ khí này sao? Một tàn tích từ cuộc chiến thời không ở kỷ nguyên tương lai...$3",
-        "Thu": "Đi qua các dòng thời gian đòi hỏi năng lượng rất lớn. Hãy sử dụng các thiết bị điều khiển cẩn trọng.$0",
-        "Fri": "Hôm nay ta tìm thấy vài linh kiện pin và tinh thể rất hiếm.$1",
-        "Sat": "Thung lũng này có một dòng chảy thời gian thật yên bình, khác hẳn những nơi ta từng qua.$0",
-        "Sun": "Ngươi đang tìm kiếm chuyến hành trình mới phải không?$1"
       }
     },
     {
