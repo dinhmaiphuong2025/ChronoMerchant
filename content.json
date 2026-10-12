@@ -1,5 +1,12 @@
 {
   "Format": "2.4.0",
+  "ConfigSchema": {
+    "PriceMode": {
+      "AllowValues": "Casual, Balanced",
+      "Default": "Casual",
+      "Description": "Casual (Giá rẻ trải nghiệm sớm: 2.5k / 10k / 25k / 50k) hoặc Balanced (Cân bằng RPG: 5k / 15k / 40k / 100k)"
+    }
+  },
   "Changes": [
     {
       "LogName": "Load Portraits",
@@ -71,9 +78,77 @@
       }
     },
     {
-      "LogName": "Register ChronoShop Data",
+      "LogName": "Register ChronoShop Data - Casual Pricing",
       "Action": "EditData",
       "Target": "Data/Shops",
+      "When": {
+        "PriceMode": "Casual"
+      },
+      "Entries": {
+        "ChronoShop": {
+          "Owners": [
+            {
+              "Name": "ChronoMerchant",
+              "Dialogues": [
+                {
+                  "Id": "Welcome",
+                  "Dialogue": "Chào lữ khách. Ta là người thu thập các bảo vật thời không trôi dạt giữa các chiều không gian. Ngươi cần tìm thứ gì?"
+                }
+              ]
+            }
+          ],
+          "Items": [
+            {
+              "Id": "RemoteBase",
+              "ItemId": "(O)dinhmaiphuong2025.SaiyanRemote.Base",
+              "Price": 2500
+            },
+            {
+              "Id": "RemotePlus",
+              "ItemId": "(O)dinhmaiphuong2025.SaiyanRemote.Plus",
+              "Price": 10000
+            },
+            {
+              "Id": "RemotePro",
+              "ItemId": "(O)dinhmaiphuong2025.SaiyanRemote.Pro",
+              "Price": 25000
+            },
+            {
+              "Id": "RemoteProMax",
+              "ItemId": "(O)dinhmaiphuong2025.SaiyanRemote.ProMax",
+              "Price": 50000
+            },
+            {
+              "Id": "WarpTotemFarm",
+              "ItemId": "(O)688",
+              "Price": 1000
+            },
+            {
+              "Id": "WarpTotemDesert",
+              "ItemId": "(O)261",
+              "Price": 2500
+            },
+            {
+              "Id": "BatteryPack",
+              "ItemId": "(O)787",
+              "Price": 2500
+            },
+            {
+              "Id": "IridiumBar",
+              "ItemId": "(O)337",
+              "Price": 8000
+            }
+          ]
+        }
+      }
+    },
+    {
+      "LogName": "Register ChronoShop Data - Balanced Pricing",
+      "Action": "EditData",
+      "Target": "Data/Shops",
+      "When": {
+        "PriceMode": "Balanced"
+      },
       "Entries": {
         "ChronoShop": {
           "Owners": [
@@ -96,17 +171,17 @@
             {
               "Id": "RemotePlus",
               "ItemId": "(O)dinhmaiphuong2025.SaiyanRemote.Plus",
-              "Price": 25000
+              "Price": 15000
             },
             {
               "Id": "RemotePro",
               "ItemId": "(O)dinhmaiphuong2025.SaiyanRemote.Pro",
-              "Price": 75000
+              "Price": 40000
             },
             {
               "Id": "RemoteProMax",
               "ItemId": "(O)dinhmaiphuong2025.SaiyanRemote.ProMax",
-              "Price": 200000
+              "Price": 100000
             },
             {
               "Id": "WarpTotemFarm",
