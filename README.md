@@ -14,6 +14,18 @@ Anh ta lang thang qua các dòng thời gian để thu thập các bảo vật c
 
 ---
 
+## 📸 Hình Ảnh Trực Quan Trong Game (Screenshots)
+
+| Thương nhân tại Rừng Cindersap | Hộp thoại trò chuyện & Chân dung |
+| :---: | :---: |
+| ![Merchant Overworld](screenshots/01_merchant_overworld.png) | ![Dialogue Portrait](screenshots/02_dialogue_portrait.png) |
+
+| Giao diện Cửa hàng Chrono Shop bán Saiyan Remotes |
+| :---: |
+| ![Chrono Shop](screenshots/03_chrono_shop.png) |
+
+---
+
 ## 2. Vị Trí & Lịch Trình (Location & Schedule)
 
 - **Vị trí:** Rừng Cindersap (`Forest`), tọa độ `(81, 23)` — nằm ngay tại bãi đất cỏ rộng rãi thoáng đãng phía trước Trang trại Marnie.
